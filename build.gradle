@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile   'org.springframework:spring-web:4.0.5.RELEASE',
+              'log4j:log4j:1.2.16'
+
+    testCompile 'junit:junit:4.11'
+}
