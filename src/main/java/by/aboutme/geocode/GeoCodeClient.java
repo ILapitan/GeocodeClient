@@ -6,14 +6,12 @@ import by.aboutme.geocode.jaxb.GeocodeResponse;
 import org.apache.log4j.Logger;
 import org.springframework.web.client.RestTemplate;
 
-import java.io.Serializable;
-
 /**
  * Client class for work with geocode service.
  *
  * @author ilya.lapitan@gmail.com
  */
-public class GeoCodeClient implements Serializable{
+public class GeoCodeClient {
     private static final Logger LOG = Logger.getLogger(GeoCodeClient.class);
 
     private final RestTemplate client;
