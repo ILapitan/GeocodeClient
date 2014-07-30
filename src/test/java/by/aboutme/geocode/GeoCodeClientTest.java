@@ -24,7 +24,8 @@ public class GeoCodeClientTest {
                 "Hamburg",
                 "Prague",
                 "San Francisco",
-                "Hamburg","Alviso"
+                "Hamburg",
+                "Alviso"
         };
 
         GeoCodeClient  client = GeoCodeClient.createGeoCodeClient(10);
