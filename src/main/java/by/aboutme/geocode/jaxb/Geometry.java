@@ -11,6 +11,7 @@ public class Geometry {
     Location location;
     String locationType;
     ViewPort viewPort;
+    Bounds bounds;
 
     public Location getLocation() {
         return location;
@@ -39,6 +40,14 @@ public class Geometry {
         this.viewPort = viewPort;
     }
 
+    public Bounds getBounds() {
+        return bounds;
+    }
+
+    @XmlElement(name = "bounds")
+    public void setBounds(Bounds bounds) {
+        this.bounds = bounds;
+    }
 
     @Override
     public String toString() {
@@ -46,6 +55,7 @@ public class Geometry {
                 "location=" + location +
                 ", locationType='" + locationType + '\'' +
                 ", viewPort=" + viewPort +
+                ", bounds=" + bounds +
                 '}';
     }
 }
